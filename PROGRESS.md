@@ -2,28 +2,28 @@
 
 Total organisations: 748
 
-- Unresearched (no data): 113
+- Unresearched (no data): 98
 - Partial (legacy data, needs V4 upgrade): 510
 - Has deeper legacy data (still needs V4 sources/confidence/markdown): 125
-- Full V4 profile complete (markdown + sourced + confidence-rated): 0
+- Full V4 profile complete (markdown + sourced + confidence-rated): 15
 
 ## Unresearched organisations (priority batch)
 
-- [ ] L'Occitane 
-- [ ] Akomeya
-- [ ] Alima Pure
-- [ ] Allas
-- [ ] Almang Market
-- [ ] Bio C’ Bon
-- [ ] Bio‑Home
-- [ ] Coca‑Cola Returnables
-- [ ] ECCBC / UNIDO PET pilot
-- [ ] EcoNowCA 
-- [ ] Ernie’s Zero Waste Shop
-- [ ] Evy Café
-- [ ] Flo Hygeine
-- [ ] For Eartth's sake
-- [ ] Green Joy
+- [x] L'Occitane — global brand; PH listing is a retail market, not a distinct subsidiary; see organisations/l-occitane.md
+- [x] Akomeya — see organisations/akomeya.md
+- [x] Alima Pure — CEASED (~2025); country corrected US not Canada; see organisations/alima-pure.md
+- [x] Allas — Indonesia; NGO-incubated venture (Enviu/Zero Waste Living Lab); see organisations/allas.md
+- [x] Almang Market — see organisations/almang-market.md
+- [x] Bio C' Bon — Japan; joint venture Aeon/Marne & Finance; see organisations/bio-c-bon.md
+- [x] Bio-Home — Singapore; brand of Lam Soon; see organisations/bio-home.md
+- [x] Coca-Cola Returnables — Brazil; multi-bottler packaging program, not a standalone company; see organisations/coca-cola-returnables.md
+- [x] ECCBC / UNIDO PET pilot — Morocco; recycling/material-recovery pilot, not a reuse programme; see organisations/eccbc-unido-pet-pilot.md
+- [x] EcoNowCA — US; active but consolidating locations; see organisations/econowca.md
+- [x] Ernie's Zero Waste Shop — UK; independent refill shop, founded 2019; see organisations/ernies-zero-waste-shop.md
+- [x] Evy Café — Switzerland; sparse/no verified reuse activity found; see organisations/evy-cafe.md
+- [x] Flo Hygiene — Nepal; parent co. TNT Hygiene; see organisations/flo-hygiene.md
+- [x] For Earth's Sake — country corrected UK not India; see organisations/for-earths-sake.md
+- [x] Green Joy — Vietnam; materials-substitution manufacturer, not core reuse; see organisations/green-joy.md
 - [ ] Green Upshot
 - [ ] Hoa Đất – Tiêu dùng an lành
 - [ ] HRK Group
