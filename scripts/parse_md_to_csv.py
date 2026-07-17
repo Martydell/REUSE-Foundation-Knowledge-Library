@@ -22,7 +22,7 @@ def parse_quickfacts(text):
         for line in m.group(1).splitlines():
             cells = [c.strip() for c in line.strip().split("|") if c.strip()]
             if len(cells) == 2 and cells[0] not in ("Field", "---"):
-                key = re.sub(r"\s+", "", cells[0])
+                key = re.sub(r"\s+", " ", cells[0]).strip()
                 facts[key] = cells[1]
     return facts
 
@@ -104,7 +104,7 @@ def parse_file(path):
 
     row = {
         "Organisation": org_name,
-        "Country": facts.get("Country/HQ","Not publicly available"),
+        "Country": facts.get("Country / HQ","Not publicly available"),
         "Status": facts.get("Status","Not publicly available"),
         "Official name (+source)": facts.get("Official Name","Not publicly available"),
         "Also known as": "Not publicly available",
@@ -115,7 +115,7 @@ def parse_file(path):
         "Year founded": facts.get("Year Founded","Not publicly available"),
         "Ownership status": facts.get("Ownership","Not publicly available"),
         "Core model": word_slice(business, 80) or "Not publicly available",
-        "Geographic scope": facts.get("Country/HQ","Not publicly available"),
+        "Geographic scope": facts.get("Country / HQ","Not publicly available"),
         "Categories": facts.get("Primary Category","Not publicly available"),
         "Key partners / customers": word_slice(partnerships, 60) or "Not publicly available",
         "Impact metrics": word_slice(impact, 80) or "Not publicly available",
