@@ -2,10 +2,10 @@
 
 Total unique organisations: 727 (748 rows in original list, 21 duplicates)
 
-- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 75
-- Unresearched (no legacy data): ~100
-- Partial (legacy data, needs V4 upgrade): ~467
-- Has deeper legacy data (still needs V4 sources/confidence/markdown): ~90
+- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 115
+- Unresearched (no legacy data): ~96
+- Partial (legacy data, needs V4 upgrade): ~436
+- Has deeper legacy data (still needs V4 sources/confidence/markdown): ~81
 
 Note: 4 completed profiles (Coca-Cola Returnables, Flo Hygiene, Bio-Home, For Earth's Sake) have corrected
 names/spellings vs. the original legacy list (which had typos/wrong countries) — tracked here by their
