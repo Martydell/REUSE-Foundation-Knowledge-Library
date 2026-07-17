@@ -1,11 +1,21 @@
 # Research Progress
 
-Total organisations: 748
+Total unique organisations: 727 (748 rows in original list, 21 duplicates)
 
-- Unresearched (no data): 98
-- Partial (legacy data, needs V4 upgrade): 510
-- Has deeper legacy data (still needs V4 sources/confidence/markdown): 125
-- Full V4 profile complete (markdown + sourced + confidence-rated): 15
+- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 55
+- Unresearched (no legacy data): ~100
+- Partial (legacy data, needs V4 upgrade): ~483
+- Has deeper legacy data (still needs V4 sources/confidence/markdown): ~89
+
+Note: 4 completed profiles (Coca-Cola Returnables, Flo Hygiene, Bio-Home, For Earth's Sake) have corrected
+names/spellings vs. the original legacy list (which had typos/wrong countries) — tracked here by their
+corrected slug, not the original list's exact string.
+
+Schema: `data/REUSE_V4_Master.csv` uses the expanded 34-column V4 schema (adds GitHub slug, short summary,
+logo/featured image URL, SEO description, primary colour, tags, last verified/updated dates, researcher,
+source count, overall confidence score, REUSE priority rating, SDGs — see README for full method).
+Generated mechanically from each org's markdown profile via `scripts/parse_md_to_csv.py` — free to re-run,
+no API calls needed, so CSV regeneration never costs research budget.
 
 ## Unresearched organisations (priority batch)
 
