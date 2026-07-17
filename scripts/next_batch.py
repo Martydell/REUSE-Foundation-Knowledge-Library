@@ -11,23 +11,38 @@ def slugify(name):
     name = unicodedata.normalize("NFKD", name).encode("ascii","ignore").decode("ascii")
     return re.sub(r"[^a-zA-Z0-9]+", "-", name).strip("-").lower()
 
+def compact_of(slug_or_name):
+    return slugify(slug_or_name).replace("-", "")
+
+def is_match(compact, done_compact_keys):
+    if compact in done_compact_keys:
+        return True
+    if difflib.get_close_matches(compact, done_compact_keys, n=1, cutoff=0.94):
+        return True
+    for dc in done_compact_keys:
+        shorter, longer = (compact, dc) if len(compact) <= len(dc) else (dc, compact)
+        if len(shorter) >= 6 and len(shorter) >= 0.6 * len(longer) and shorter in longer:
+            return True
+    return False
+
 def get_remaining(repo_root):
     done_slugs = sorted(f[:-3] for f in os.listdir(os.path.join(repo_root,"organisations")) if f.endswith(".md"))
-    done_compact = {s.replace("-",""): s for s in done_slugs}
+    # ascii-fold done slugs too, in case an agent kept accented chars in a filename
+    done_compact = {compact_of(s) for s in done_slugs}
     with open(os.path.join(repo_root,"data","REUSE_Master_List.csv"), encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-    remaining, seen = [], set()
+    remaining, seen, seen_compact = [], set(), set()
     for r in rows:
         name = r["Organisation"].strip()
         if not name or name in seen or name in MANUAL_ALIASES:
             continue
         seen.add(name)
-        slug = slugify(name)
-        compact = slug.replace("-","")
-        if slug in done_slugs or compact in done_compact:
+        compact = compact_of(name)
+        if compact in seen_compact:
+            continue  # duplicate entry within the legacy list itself (e.g. "Clean Cult" / "CleanCult")
+        if is_match(compact, done_compact):
             continue
-        if difflib.get_close_matches(compact, done_compact.keys(), n=1, cutoff=0.94):
-            continue
+        seen_compact.add(compact)
         remaining.append(r)
     return remaining
 
