@@ -1,0 +1,124 @@
+# Research Progress
+
+Total organisations: 748
+
+- Unresearched (no data): 113
+- Partial (legacy data, needs V4 upgrade): 510
+- Has deeper legacy data (still needs V4 sources/confidence/markdown): 125
+- Full V4 profile complete (markdown + sourced + confidence-rated): 0
+
+## Unresearched organisations (priority batch)
+
+- [ ] L'Occitane 
+- [ ] Akomeya
+- [ ] Alima Pure
+- [ ] Allas
+- [ ] Almang Market
+- [ ] Bio C’ Bon
+- [ ] Bio‑Home
+- [ ] Coca‑Cola Returnables
+- [ ] ECCBC / UNIDO PET pilot
+- [ ] EcoNowCA 
+- [ ] Ernie’s Zero Waste Shop
+- [ ] Evy Café
+- [ ] Flo Hygeine
+- [ ] For Eartth's sake
+- [ ] Green Joy
+- [ ] Green Upshot
+- [ ] Hoa Đất – Tiêu dùng an lành
+- [ ] HRK Group
+- [ ] KinkoCare
+- [ ] Let’s Get Naked Refill
+- [ ] Maria Granel
+- [ ] Mi Barrio Sin Residuos (UNDP project)
+- [ ] miniml
+- [ ] Moon Berry Made
+- [ ] Mottainai Refill
+- [ ] Mottainai Refill
+- [ ] Mottainai Refill
+- [ ] My Naked Bar
+- [ ] MyEarth
+- [ ] mymizu
+- [ ] Nashonuma
+- [ ] Net Zero Co.
+- [ ] O Granel da Sofia
+- [ ] Ong Hut Co
+- [ ] Ozarka
+- [ ] Packaging Cluster / Green Impackt
+- [ ] Pakpet
+- [ ] Paraguay Sin Basura (“Reduce” guide)
+- [ ] Pfaffhüsli
+- [ ] Pizza 4P’s
+- [ ] PolyLayerTech
+- [ ] Rampe5 ZeroWaste Ladencafé
+- [ ] Re-up Refill
+- [ ] Recicla y Reusa Venezuela
+- [ ] Reciclaje Moreno (AIM2Flourish)
+- [ ] Reciclarte
+- [ ] rĒCo Refillery
+- [ ] Refill
+- [ ] Refill H2O – IPVC
+- [ ] Refiller Mobile
+- [ ] Replenish Refillery & Zero Waste Store
+- [ ] Reuso.io
+- [ ] Sanima
+- [ ] Sankoty Sustainables
+- [ ] Saponetti 
+- [ ] Saponetti Soaps
+- [ ] Savonnerie des Diligences
+- [ ] Searious Business – MOSSUP
+- [ ] Seeker's spirits
+- [ ] Shuangti
+- [ ] Slo Store
+- [ ] SmartFilter
+- [ ] SOCSE
+- [ ] Solid
+- [ ] Sonora Reffilery
+- [ ] Spruce Refill
+- [ ] Sun Moon Rain
+- [ ] Sunrise Straws
+- [ ] Sunsilk
+- [ ] Sustenir 
+- [ ] Tạp Hóa Lá Xanh
+- [ ] Tarım Kredi Sıfır Market
+- [ ] Tetra Pak Paraguay
+- [ ] The Ditty Bag
+- [ ] The Green Bee
+- [ ] The Mayan Collective
+- [ ] The Nature Masons
+- [ ] The Purest Solutions
+- [ ] The Refillary Storehouse
+- [ ] The Sustainability Project
+- [ ] The Tare Market
+- [ ] The Unwaste Shop
+- [ ] The Wallet Shop
+- [ ] The Wally Shop
+- [ ] The Waste Free Co.
+- [ ] Tip Toe Eco Marketplace
+- [ ] TNT Bags
+- [ ] Touch the Toes
+- [ ] TRAMUCO (via COOPI initiative)
+- [ ] Trash Hero Czech Republic 
+- [ ] Trashit
+- [ ] Unibag
+- [ ] Unilever Colombia (FAB, Dirt is Good)
+- [ ] Unit Goods
+- [ ] Unpackaged Eco (potentially closed?)
+- [ ] V’s HOME – Veggie Restaurant & Café
+- [ ] Venezolana de Reciclaje, C.A.
+- [ ] Venezuela Refill Initiative
+- [ ] VerdeMar
+- [ ] Vermont Soap
+- [ ] Village General Store
+- [ ] Wasteupso Zero-Waste Shop
+- [ ] Well Spent Grain
+- [ ] Wheedle
+- [ ] Woosh Water
+- [ ] XICLO / Biocírculo
+- [ ] XXL Refill
+- [ ] Your Sustainable store
+- [ ] Zero Waste Harare (women‑led)
+- [ ] Zero Waste Reserve
+- [ ] Zero Waste Store
+- [ ] Zeropolitan
+- [ ] Zerosporo
