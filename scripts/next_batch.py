@@ -1,6 +1,6 @@
 import csv, os, re, sys, unicodedata, difflib
 
-MANUAL_ALIASES = {"Flo Hygeine", "Eviu"}
+MANUAL_ALIASES = {"Flo Hygeine", "Eviu", "Greenpeace Phillipenes", "Grum"}
 COLS = ["Organisation","Category","Country","Website","Contact Information","Focus Area",
         "Year Established","Trading Status","Ownership","Core model","Company Size data",
         "Customers","Geographic scope","Categories","Partners","Partner Category",
