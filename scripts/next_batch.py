@@ -23,11 +23,16 @@ def name_variants(name):
     if "&" in name:
         yield words_of(name.replace("&", " and "))
 
-def is_prefix_match(words_a, words_b):
-    n = min(len(words_a), len(words_b))
-    if n == 0:
+def is_contiguous_match(words_a, words_b):
+    """True if the shorter word-list appears as a contiguous run anywhere in the longer one."""
+    shorter, longer = (words_a, words_b) if len(words_a) <= len(words_b) else (words_b, words_a)
+    if not shorter:
         return False
-    return words_a[:n] == words_b[:n]
+    n = len(shorter)
+    for i in range(len(longer) - n + 1):
+        if longer[i:i+n] == shorter:
+            return True
+    return False
 
 def is_match(name, done_words_list, done_compact_keys):
     compact = compact_of(name)
@@ -37,7 +42,7 @@ def is_match(name, done_words_list, done_compact_keys):
         return True
     for words in name_variants(name):
         for done_words in done_words_list:
-            if is_prefix_match(words, done_words):
+            if is_contiguous_match(words, done_words):
                 return True
     return False
 
