@@ -2,8 +2,8 @@
 
 Total unique organisations: 727 (748 rows in original list, 21 duplicates)
 
-- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 607
-- Remaining (unresearched + partial + deep legacy, combined): 102
+- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 673
+- Remaining (unresearched + partial + deep legacy, combined): 34
 
 Note: from org #398 onward (~Looping/M-names onward), profiles use a leaner format at the
 user's request to increase throughput: 1-2 sources per org instead of 2-4, ~50-word overview/
@@ -98,35 +98,35 @@ no API calls needed, so CSV regeneration never costs research budget.
 - [x] Tetra Pak Paraguay — see organisations/tetra-pak-paraguay.md
 - [x] The Ditty Bag — see organisations/the-ditty-bag.md
 - [x] The Green Bee — see organisations/the-green-bee.md
-- [ ] The Mayan Collective
-- [ ] The Nature Masons
-- [ ] The Purest Solutions
-- [ ] The Refillary Storehouse
-- [ ] The Sustainability Project
-- [ ] The Tare Market
-- [ ] The Unwaste Shop
-- [ ] The Wallet Shop
-- [ ] The Wally Shop
-- [ ] The Waste Free Co.
-- [ ] Tip Toe Eco Marketplace
-- [ ] TNT Bags
-- [ ] Touch the Toes
-- [ ] TRAMUCO (via COOPI initiative)
-- [ ] Trash Hero Czech Republic 
-- [ ] Trashit
-- [ ] Unibag
-- [ ] Unilever Colombia (FAB, Dirt is Good)
-- [ ] Unit Goods
-- [ ] Unpackaged Eco (potentially closed?)
-- [ ] V’s HOME – Veggie Restaurant & Café
-- [ ] Venezolana de Reciclaje, C.A.
-- [ ] Venezuela Refill Initiative
-- [ ] VerdeMar
-- [ ] Vermont Soap
-- [ ] Village General Store
-- [ ] Wasteupso Zero-Waste Shop
-- [ ] Well Spent Grain
-- [ ] Wheedle
+- [x] The Mayan Collective — see organisations/the-mayan-collective.md
+- [x] The Nature Masons — uses tin not aluminium containers, corrected; see organisations/the-nature-masons.md
+- [x] The Purest Solutions — see organisations/the-purest-solutions.md
+- [x] The Refillary Storehouse — actual name/location: The Refillery Storehouse, Poughkeepsie NY (not Canada); see organisations/the-refillery-storehouse.md
+- [x] The Sustainability Project — see organisations/the-sustainability-project.md
+- [x] The Tare Market — see organisations/the-tare-market.md
+- [x] The Unwaste Shop — see organisations/the-unwaste-shop.md
+- [x] The Wallet Shop — see organisations/the-wallet-shop.md
+- [x] The Wally Shop — see organisations/the-wally-shop.md
+- [x] The Waste Free Co. — see organisations/the-waste-free-co.md
+- [x] Tip Toe Eco Marketplace — see organisations/tip-toe-eco-marketplace.md
+- [x] TNT Bags — see organisations/tnt-bags.md
+- [x] Touch the Toes — see organisations/touch-the-toes.md
+- [x] TRAMUCO (via COOPI initiative) — full name Transformación, Mujeres, Comunidad; see organisations/tramuco-coopi.md
+- [x] Trash Hero Czech Republic — see organisations/trash-hero-czech-republic.md
+- [x] Trashit — see organisations/trashit.md
+- [x] Unibag — country corrected Chile not Peru; see organisations/unibag.md
+- [x] Unilever Colombia (FAB, Dirt is Good) — home-care business sold to Alicorp Jan 2026, ownership corrected; see organisations/unilever-colombia-fab-dirt-is-good.md
+- [x] Unit Goods — existence could not be verified; thin stub; see organisations/unit-goods.md
+- [x] Unpackaged Eco (potentially closed?) — no closure evidence found, appears active; see organisations/unpackaged-eco.md
+- [x] V's HOME – Veggie Restaurant & Café — Vietnam; appears closed per 2022 review; see organisations/vs-home-veggie-restaurant-cafe.md
+- [x] Venezolana de Reciclaje, C.A. — see organisations/venezolana-de-reciclaje.md
+- [x] Venezuela Refill Initiative — domain does not resolve, unverifiable; see organisations/venezuela-refill-initiative.md
+- [x] VerdeMar — conventional supermarket chain w/ no-plastic-bag policy, not reuse-centric; see organisations/verdemar.md
+- [x] Vermont Soap — duplicate of The Castile Soap Shop (same contact/company); see organisations/the-castile-soap-shop.md
+- [x] Village General Store — see organisations/village-general-store.md
+- [x] Wasteupso Zero-Waste Shop — see organisations/wasteupso-zero-waste-shop.md
+- [x] Well Spent Grain — see organisations/well-spent-grain.md
+- [x] Wheedle — see organisations/wheedle.md
 - [ ] Woosh Water
 - [ ] XICLO / Biocírculo
 - [ ] XXL Refill
