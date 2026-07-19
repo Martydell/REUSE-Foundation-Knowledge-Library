@@ -2,8 +2,8 @@
 
 Total unique organisations: 727 (748 rows in original list, 21 duplicates)
 
-- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 468
-- Remaining (unresearched + partial + deep legacy, combined): 246
+- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 537
+- Remaining (unresearched + partial + deep legacy, combined): 176
 
 Note: from org #398 onward (~Looping/M-names onward), profiles use a leaner format at the
 user's request to increase throughput: 1-2 sources per org instead of 2-4, ~50-word overview/
@@ -50,31 +50,31 @@ no API calls needed, so CSV regeneration never costs research budget.
 - [ ] Mottainai Refill
 - [ ] Mottainai Refill
 - [ ] Mottainai Refill
-- [ ] My Naked Bar
-- [ ] MyEarth
-- [ ] mymizu
-- [ ] Nashonuma
-- [ ] Net Zero Co.
+- [x] My Naked Bar — see organisations/my-naked-bar.md
+- [x] MyEarth — actually L'earth (S) Pte Ltd, Singapore; bio-composite single-use, low relevance; see organisations/myearth.md
+- [x] mymizu — Japan + Philippines chapter (Mymizu PH); see organisations/mymizu.md, organisations/mymizu-ph.md
+- [x] Nashonuma — see organisations/nashonuma.md
+- [x] Net Zero Co. — see organisations/net-zero-co.md
 - [x] O Granel da Sofia — see organisations/o-granel-da-sofia.md
-- [ ] Ong Hut Co
-- [ ] Ozarka
-- [ ] Packaging Cluster / Green Impackt
-- [ ] Pakpet
-- [ ] Paraguay Sin Basura (“Reduce” guide)
-- [ ] Pfaffhüsli
-- [ ] Pizza 4P’s
-- [ ] PolyLayerTech
-- [ ] Rampe5 ZeroWaste Ladencafé
-- [ ] Re-up Refill
-- [ ] Recicla y Reusa Venezuela
-- [ ] Reciclaje Moreno (AIM2Flourish)
-- [ ] Reciclarte
+- [x] Ong Hut Co — Vietnam; single-use biodegradable straws, not reuse; see organisations/ong-hut-co.md
+- [x] Ozarka — Netherlands; site is live (seed's "broken" note was wrong); see organisations/ozarka.md
+- [x] Packaging Cluster / Green Impackt — lead org is Spain-based, Green Impackt is EU-funded Colombia programme; see organisations/packaging-cluster-green-impackt.md
+- [x] Pakpet — Pakistan; no dedicated reuse/refill line found, low-confidence inclusion; see organisations/pakpet.md
+- [x] Paraguay Sin Basura (“Reduce” guide) — see organisations/paraguay-sin-basura.md
+- [x] Pfaffhüsli — see organisations/pfaffhusli.md
+- [x] Pizza 4P’s — see organisations/pizza-4ps.md
+- [x] PolyLayerTech — see organisations/polylayertech.md
+- [x] Rampe5 ZeroWaste Ladencafé — Zurich; see organisations/rampe5-zerowaste-ladencafe.md
+- [x] Re-up Refill — merged w/ duplicate seed row "Re up Refills"; see organisations/re-up-refills.md
+- [x] Recicla y Reusa Venezuela — no matching org confirmed publicly; thin profile per rules; see organisations/recicla-y-reusa-venezuela.md
+- [x] Reciclaje Moreno (AIM2Flourish) — no matching org confirmed publicly; thin profile per rules; see organisations/reciclaje-moreno-aim2flourish.md
+- [x] Reciclarte — no matching org confirmed publicly; thin profile per rules; see organisations/reciclarte.md
 - [ ] rĒCo Refillery
 - [ ] Refill
-- [ ] Refill H2O – IPVC
-- [ ] Refiller Mobile
-- [ ] Replenish Refillery & Zero Waste Store
-- [ ] Reuso.io
+- [x] Refill H2O – IPVC — Portugal; university IoT refill pilot; see organisations/refill-h2o-ipvc.md
+- [x] Refiller Mobile — Malaysia; see organisations/refiller-mobile.md
+- [x] Replenish Refillery & Zero Waste Store — Canada; confirmed independent of the similarly-named US company; see organisations/replenish-refillery-canada.md
+- [x] Reuso.io — US; see organisations/reuso-io.md
 - [ ] Sanima
 - [ ] Sankoty Sustainables
 - [ ] Saponetti 
