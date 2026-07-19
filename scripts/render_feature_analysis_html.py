@@ -10,9 +10,18 @@ import json
 import os
 import re
 
+import base64
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JSON_PATH = os.path.join(REPO_ROOT, "analysis", "feature_analysis.json")
 OUT_PATH = os.path.join(REPO_ROOT, "analysis", "feature_analysis_report.html")
+LOGO_PATH = os.path.join(REPO_ROOT, "docs", "assets", "reuse-logo.png")
+
+
+def logo_data_uri():
+    with open(LOGO_PATH, "rb") as f:
+        b64 = base64.b64encode(f.read()).decode("ascii")
+    return f"data:image/png;base64,{b64}"
 
 
 def esc(s):
@@ -72,8 +81,8 @@ def prose_section(title, number, text, id_):
 
 CSS = """
 :root {
-  --paper: #eeeae0; --paper-raised: #f7f4ec; --ink: #262119; --muted: #6b6455;
-  --accent: #2c5c42; --accent-soft: #dde6dc; --line: #d9d2c2;
+  --paper: #ffffff; --paper-raised: #f5fafd; --ink: #282626; --muted: #66655f;
+  --accent: #006699; --accent-bright: #57c7ff; --accent-soft: #e8f7ff; --line: #dfe3e6;
   --tier-high: #1f6b52; --tier-high-bg: #dcece4;
   --tier-medium: #8a6413; --tier-medium-bg: #ede2c4;
   --tier-low: #8a5236; --tier-low-bg: #ecdfd6;
@@ -83,23 +92,23 @@ CSS = """
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #1b1d18; --paper-raised: #24261f; --ink: #ece7da; --muted: #a9a290;
-    --accent: #7fd9ac; --accent-soft: #223a2d; --line: #3a3c33;
+    --paper: #000000; --paper-raised: #111214; --ink: #f0f1f2; --muted: #9a9d9f;
+    --accent: #57c7ff; --accent-bright: #57c7ff; --accent-soft: #0d2733; --line: #26292c;
     --tier-high: #7fd9ac; --tier-high-bg: #1e3a2c;
     --tier-medium: #d9b969; --tier-medium-bg: #3a3018;
     --tier-low: #d99a76; --tier-low-bg: #3a2a1f;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #1b1d18; --paper-raised: #24261f; --ink: #ece7da; --muted: #a9a290;
-  --accent: #7fd9ac; --accent-soft: #223a2d; --line: #3a3c33;
+  --paper: #000000; --paper-raised: #111214; --ink: #f0f1f2; --muted: #9a9d9f;
+  --accent: #57c7ff; --accent-bright: #57c7ff; --accent-soft: #0d2733; --line: #26292c;
   --tier-high: #7fd9ac; --tier-high-bg: #1e3a2c;
   --tier-medium: #d9b969; --tier-medium-bg: #3a3018;
   --tier-low: #d99a76; --tier-low-bg: #3a2a1f;
 }
 :root[data-theme="light"] {
-  --paper: #eeeae0; --paper-raised: #f7f4ec; --ink: #262119; --muted: #6b6455;
-  --accent: #2c5c42; --accent-soft: #dde6dc; --line: #d9d2c2;
+  --paper: #ffffff; --paper-raised: #f5fafd; --ink: #282626; --muted: #66655f;
+  --accent: #006699; --accent-bright: #57c7ff; --accent-soft: #e8f7ff; --line: #dfe3e6;
   --tier-high: #1f6b52; --tier-high-bg: #dcece4;
   --tier-medium: #8a6413; --tier-medium-bg: #ede2c4;
   --tier-low: #8a5236; --tier-low-bg: #ecdfd6;
@@ -109,6 +118,7 @@ html { background: var(--paper); }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.65; }
 .wrap { max-width: 760px; margin: 0 auto; padding: 3.5rem 1.5rem 6rem; }
 .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 1.6rem; margin-bottom: 2rem; }
+.masthead-logo { height: 30px; width: auto; margin-bottom: 1.1rem; display: block; }
 .eyebrow { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.7rem; }
 h1 { font-family: var(--serif); font-weight: 600; font-size: 2.3rem; line-height: 1.15; margin: 0 0 0.6rem; text-wrap: balance; letter-spacing: -0.01em; }
 .subtitle { color: var(--muted); font-size: 1.02rem; max-width: 62ch; margin: 0; }
@@ -158,6 +168,7 @@ PAGE = """<!doctype html>
 <body>
 <div class="wrap">
   <div class="masthead">
+    <img class="masthead-logo" src="{logo_uri}" alt="REUSE Foundation">
     <p class="eyebrow">REUSE Foundation — Internal Analysis</p>
     <h1>Feature Analysis: Reuse &amp; Refill Organisations</h1>
     <p class="subtitle">Common features, patterns, and success factors across the REUSE Foundation Knowledge Library — computed directly from the full researched dataset, not sampled.</p>
@@ -205,6 +216,7 @@ def main():
 
     page = PAGE.format(
         css=CSS,
+        logo_uri=logo_data_uri(),
         methodology=esc(data["methodology_note"]),
         n_features=len(data["key_common_features"]),
         features_section=features_section,
