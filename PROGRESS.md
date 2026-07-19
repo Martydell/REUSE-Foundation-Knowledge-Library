@@ -2,8 +2,8 @@
 
 Total unique organisations: 727 (748 rows in original list, 21 duplicates)
 
-- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 537
-- Remaining (unresearched + partial + deep legacy, combined): 176
+- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 607
+- Remaining (unresearched + partial + deep legacy, combined): 102
 
 Note: from org #398 onward (~Looping/M-names onward), profiles use a leaner format at the
 user's request to increase throughput: 1-2 sources per org instead of 2-4, ~50-word overview/
@@ -75,29 +75,29 @@ no API calls needed, so CSV regeneration never costs research budget.
 - [x] Refiller Mobile — Malaysia; see organisations/refiller-mobile.md
 - [x] Replenish Refillery & Zero Waste Store — Canada; confirmed independent of the similarly-named US company; see organisations/replenish-refillery-canada.md
 - [x] Reuso.io — US; see organisations/reuso-io.md
-- [ ] Sanima
-- [ ] Sankoty Sustainables
-- [ ] Saponetti 
-- [ ] Saponetti Soaps
-- [ ] Savonnerie des Diligences
-- [ ] Searious Business – MOSSUP
-- [ ] Seeker's spirits
-- [ ] Shuangti
-- [ ] Slo Store
-- [ ] SmartFilter
-- [ ] SOCSE
-- [ ] Solid
-- [ ] Sonora Reffilery
-- [ ] Spruce Refill
-- [ ] Sun Moon Rain
-- [ ] Sunrise Straws
-- [ ] Sunsilk
-- [ ] Sustenir 
-- [ ] Tạp Hóa Lá Xanh
-- [ ] Tarım Kredi Sıfır Market
-- [ ] Tetra Pak Paraguay
-- [ ] The Ditty Bag
-- [ ] The Green Bee
+- [x] Sanima — see organisations/sanima.md
+- [x] Sankoty Sustainables — see organisations/sankoty-sustainables.md
+- [x] Saponetti — merged w/ duplicate seed row "Saponetti Soaps"; see organisations/saponetti.md
+- [x] Saponetti Soaps — merged into organisations/saponetti.md
+- [x] Savonnerie des Diligences — see organisations/savonnerie-des-diligences.md
+- [x] Searious Business – MOSSUP — Morocco pilot; see organisations/searious-business-mossup.md
+- [x] Seeker's spirits — see organisations/seekers-spirits.md
+- [x] Shuangti — see organisations/shuangti.md
+- [x] Slo Store — see organisations/slo-store.md
+- [x] SmartFilter — see organisations/smartfilter.md
+- [x] SOCSE — see organisations/socse.md
+- [x] Solid — see organisations/solid-oral-care.md
+- [x] Sonora Reffilery — actual name Sonora Refillery; see organisations/sonora-reffilery.md
+- [x] Spruce Refill — merged w/ duplicate seed row "Spruce"; see organisations/spruce.md
+- [x] Sun Moon Rain — see organisations/sun-moon-rain.md
+- [x] Sunrise Straws — actual name Sunbird Straws; see organisations/sunbird-straws.md
+- [x] Sunsilk — Unilever refill programme, Pakistan; see organisations/sunsilk-pakistan-refill.md
+- [x] Sustenir — seed miscategorised; actually a vertical-farming co, no reuse activity; see organisations/sustenir.md
+- [x] Tạp Hóa Lá Xanh — see organisations/tap-hoa-la-xanh.md
+- [x] Tarım Kredi Sıfır Market — see organisations/tarim-kredi-sifir-market.md
+- [x] Tetra Pak Paraguay — see organisations/tetra-pak-paraguay.md
+- [x] The Ditty Bag — see organisations/the-ditty-bag.md
+- [x] The Green Bee — see organisations/the-green-bee.md
 - [ ] The Mayan Collective
 - [ ] The Nature Masons
 - [ ] The Purest Solutions
