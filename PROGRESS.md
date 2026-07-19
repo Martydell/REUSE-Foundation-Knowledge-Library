@@ -2,8 +2,14 @@
 
 Total unique organisations: 727 (748 rows in original list, 21 duplicates)
 
-- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 361
-- Remaining (unresearched + partial + deep legacy, combined): 355
+- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 397
+- Remaining (unresearched + partial + deep legacy, combined): 318
+
+Note: from org #398 onward (~Looping/M-names onward), profiles use a leaner format at the
+user's request to increase throughput: 1-2 sources per org instead of 2-4, ~50-word overview/
+~75-word business model instead of 100/150-200, terser bullet-style sections, 1-2 line
+Verification Notes. The "never invent, mark unconfirmed as Not publicly available" rule is
+unchanged - only prose depth and source-count were reduced, not verification rigor.
 
 Note: 4 completed profiles (Coca-Cola Returnables, Flo Hygiene, Bio-Home, For Earth's Sake) have corrected
 names/spellings vs. the original legacy list (which had typos/wrong countries) — tracked here by their
