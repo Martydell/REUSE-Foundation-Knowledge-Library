@@ -1,0 +1,129 @@
+{
+  "methodology_note": "This analysis was run computationally against the full REUSE Foundation Knowledge Library dataset (708 organisations, data/REUSE_V4_Master.csv) rather than manual review: tag/ownership/country/status/priority-rating frequencies were tallied directly from structured CSV fields, and technology, customer-segment, and partnership signals were extracted via keyword search across each organisation's core-model and summary text. All prevalence percentages and examples below are drawn from that computed output, not estimated.",
+  "key_common_features": [
+    {
+      "feature": "Refill and reusable-packaging systems are the dominant activity",
+      "description": "Refill systems (49.3% of orgs) and reusable packaging (47.0%) are by far the two most common circular-economy activities in the dataset, well ahead of adjacent models like industrial reuse (7.9%), repair (2.3%) or rental (2.3%). This confirms the sector is overwhelmingly organised around replacing single-use packaging at the point of sale or delivery, rather than extending product life through repair/rental.",
+      "prevalence": "High",
+      "examples": [
+        "Algramo",
+        "TerraCycle (Loop)",
+        "barePack",
+        "Muuse",
+        "Again Again"
+      ]
+    },
+    {
+      "feature": "Waste-reduction and consumer-education framing is near-universal",
+      "description": "62.3% of organisations are tagged for waste-reduction activity and 61.9% for consumer education — reflecting that most orgs frame their value proposition around behaviour change and environmental messaging, not purely operational logistics. This is consistent with SDG tagging: 98.6% of orgs map to SDG 12 (Responsible Consumption and Production) and 61.9% additionally to SDG 4 (Quality Education).",
+      "prevalence": "High",
+      "examples": [
+        "Unpackt",
+        "The Filling Station Eco Store",
+        "Zero Waste Kenya",
+        "Zero Waste Malaysia"
+      ]
+    },
+    {
+      "feature": "B2C direct-to-consumer is the primary customer model, with a large overlapping B2B layer",
+      "description": "71.0% of organisations sell or serve consumers directly (retail refill shops, consumer apps, subscription products), while 51.8% also show clear B2B signals (supplying retailers, restaurants, or corporate clients) — many orgs operate both simultaneously. Pure B2B2C platforms that exist only to connect brands and consumers are a small, distinct group (1.6%, e.g. reusable-container platforms for food delivery).",
+      "prevalence": "High",
+      "examples": [
+        "Xiclo",
+        "OPACK",
+        "Vytal",
+        "Cup Club"
+      ]
+    },
+    {
+      "feature": "Independent private ownership dominates; non-profits are a meaningful minority",
+      "description": "61.9% of organisations are independently privately owned (not VC-backed, not a corporate subsidiary), while non-profits/NGOs/cooperatives make up 9.6% and venture-backed private companies 6.6%. Corporate subsidiaries of larger companies (3.5%) and public-listed companies (2.3%) are small but include some of the highest-scale reuse infrastructure in the dataset.",
+      "prevalence": "High",
+      "examples": [
+        "CHEP",
+        "Schoeller Allibert (IPL Schoeller)",
+        "Zero Waste Austria",
+        "RREUSE",
+        "Sanergy (The Sanergy Collaborative / Fresh Life)"
+      ]
+    },
+    {
+      "feature": "Reverse logistics and digital tracking correlate strongly with higher REUSE priority ratings",
+      "description": "Among all 708 orgs, reverse-logistics appears in 21.6% and digital-tracking in 13.6% of profiles. But filtered to only Essential/High-priority orgs (n=238), those figures roughly double to 41.6% and 28.6% respectively — the strongest differentiator found between merely-present organisations and the ones REUSE Foundation's own researchers rated as most valuable case studies. This suggests operational maturity (collection/cleaning/redistribution loops, app or RFID-based accountability) is a key marker of a serious reuse operator, not just a nice-to-have.",
+      "prevalence": "Medium (but strongly rising among top-tier orgs)",
+      "examples": [
+        "Vytal",
+        "Algramo",
+        "CupLoop",
+        "Alner (formerly Koinpack)",
+        "RE-ZIP"
+      ]
+    },
+    {
+      "feature": "Deposit-return and packaging-as-a-service are small but disproportionately high-value niches",
+      "description": "Deposit-return (8.1% overall) and packaging-as-a-service (6.9% overall) are minority activities dataset-wide, but among Essential/High-priority orgs they rise to 18.5% and 17.2% respectively — a larger jump than almost any other tag. This is the clearest 'small but mighty' pattern in the data: these two models are rare but strongly associated with the organisations REUSE Foundation's own methodology considers most important.",
+      "prevalence": "Medium",
+      "examples": [
+        "Again Again",
+        "Alner (formerly Koinpack)",
+        "TOMRA (Reusable Takeaway Packaging / REUSEABLE Aarhus)",
+        "The Greet",
+        "Shareclub"
+      ]
+    },
+    {
+      "feature": "The sector is overwhelmingly post-2010 in origin",
+      "description": "Of the 498 organisations (70% of the dataset) with an extractable founding year, 53.6% were founded in the 2010s and a further 24.3% in the 2020s — meaning roughly 78% of dateable organisations are less than 15 years old. Only 7.2% predate 1990. This confirms the modern reuse/refill sector is a genuinely recent phenomenon, closely tracking the global zero-waste movement and EU/UK single-use-plastic policy shifts rather than being a mature, long-established industry (with notable legacy exceptions in industrial packaging, e.g. Schoeller Allibert tracing to 1960, CHEP to 1945).",
+      "prevalence": "High",
+      "examples": [
+        "Unpackt (2017)",
+        "TerraCycle (Loop) (2019 pilot)",
+        "Vytal (2019)",
+        "Schoeller Allibert (IPL Schoeller) (1960, outlier)"
+      ]
+    },
+    {
+      "feature": "A recurring set of major retailers and FMCG brands anchor pilot partnerships",
+      "description": "Named-partner scanning found Coop (19 mentions), Carrefour (13), Coca-Cola (12), Amazon (11), Unilever (9), Nestlé (8), Walmart (7), Aldi (5) and P&G (5) recurring across otherwise-unrelated organisation profiles as retail hosts, pilot partners, or investors. This indicates a small set of large retailers/FMCG groups function as the primary 'distribution gatekeepers' the reuse sector depends on to reach consumer scale.",
+      "prevalence": "Medium",
+      "examples": [
+        "Searious Business – MOSSUP (Carrefour/Marjane)",
+        "Swapp! (Carrefour/Auchan/Superpharm)",
+        "TerraCycle (Loop) (P&G, Coca-Cola, Nestlé, Unilever)",
+        "Naturals by Watsons (A.S. Watson)"
+      ]
+    },
+    {
+      "feature": "Major FMCG-owned brand-level refill initiatives form a distinct recognisable subgroup",
+      "description": "A specific and repeatable pattern: large consumer-goods multinationals running country-specific refill pilots under an existing brand name, rather than a standalone reuse startup. This appeared distinctly enough across multiple Unilever brands (and one Unilever Colombia sub-brand ownership change to Alicorp, discovered during this research) to be a reliable, searchable category.",
+      "prevalence": "Low (small count, but a highly repeatable and identifiable pattern)",
+      "examples": [
+        "Unilever — Global Refill & Reuse Initiative (incl. Philippines)",
+        "Unilever (Sedal brand) — Mexico Refill Stations",
+        "OMO",
+        "Sunsilk (Unilever Refill Initiative, Pakistan)"
+      ]
+    },
+    {
+      "feature": "Geographic footprint is broad (69 countries) but concentrated in a handful of markets",
+      "description": "The dataset spans 69 distinct countries, but the top 5 (United States 10.7%, United Kingdom 6.2%, Canada 4.4%, Netherlands 4.0%, Singapore 3.5%) account for nearly 29% of all organisations. English-speaking and Northern European markets are disproportionately represented relative to global population or plastic-waste burden.",
+      "prevalence": "High",
+      "examples": [
+        "United States (76 orgs)",
+        "United Kingdom (44 orgs)",
+        "Canada (31 orgs)",
+        "Netherlands (28 orgs)"
+      ]
+    },
+    {
+      "feature": "Public disclosure of scale (company size) is essentially absent across the sector",
+      "description": "100% of profiles recorded 'Not publicly available' for estimated company size — not a research gap specific to this project, but a genuine, consistent transparency limitation across the reuse/refill sector itself: even well-known, well-funded organisations rarely publish employee counts. Overall research confidence skews accordingly: only 15.0% of profiles achieved 'High' overall confidence, 48.2% 'Medium', and 36.9% 'Low'.",
+      "prevalence": "High (as a sector-wide transparency trait, not a project artefact)",
+      "examples": []
+    }
+  ],
+  "actionable_search_criteria": "Core phrase searches: \"refill station\", \"zero waste shop\", \"package-free store\", \"BYOC\" / \"bring your own container\", \"reusable packaging\", \"deposit return system\", \"packaging as a service\", \"container-as-a-service\", \"returnable packaging\", \"closed-loop packaging\", \"reuse network\". Technology-signal searches (strongly correlated with higher-value orgs per the analysis above): \"RFID reusable container\", \"QR code deposit return\", \"app-based cup return\", \"smart bin reuse\", \"reverse logistics reusable packaging\". Retail-partnership monitoring: track sustainability/packaging press releases from the recurring gatekeeper retailers/brands identified in this analysis — Coop, Carrefour, Amazon, Coca-Cola, Unilever, Nestlé, Walmart, Aldi, P&G — since new reuse partners are frequently announced through these companies' own PR channels rather than the startup's. Directory/ecosystem sources: Zero Waste Europe member list, RREUSE member directory, New Reuse Alliance member list, Ellen MacArthur Foundation case studies, Reusable Packaging Association marketplace, national Zero Waste NGOs (format: \"Zero Waste [Country]\", which recurred as a reliable naming convention across at least 6 countries in this dataset). Funding-database searches: Crunchbase/PitchBook filtered on \"reusable packaging\" or \"circular packaging\" industry tags, since 6.6% of the dataset is venture-backed and these deals are typically press-released. Geographic-gap searches (see potential_gaps below): pair the phrase searches above with underrepresented country names directly, e.g. \"refill station Nigeria\", \"zero waste shop Bangladesh\", \"reusable packaging Brazil\", to counteract the dataset's current US/UK/Northern-Europe skew.",
+  "success_factors": "1) Operational reverse-logistics capability (collection, cleaning, redistribution) is the single strongest differentiator between average and top-rated organisations in this dataset — present in 41.6% of Essential/High-priority orgs vs 21.6% dataset-wide. 2) Digital accountability (app-based tracking, QR codes, RFID) shows the same pattern (28.6% vs 13.6%), suggesting that solving the 'where did my container go' problem is a prerequisite for scaling past a single retail location. 3) Retail/corporate distribution partnerships (Coop, Carrefour, Unilever, etc.) let reuse operators reach consumer scale without building their own storefronts or brand awareness from scratch — nearly every organisation with major-retailer partnerships in this dataset also carries a High or Essential priority rating. 4) Regulatory/cultural timing: the heavy concentration of founding dates in 2015-2024 suggests organisations that launched alongside EU/UK single-use-plastic policy shifts and the mainstream zero-waste movement benefited from tailwind demand rather than having to create the market themselves. 5) Hybrid B2B2C positioning (selling into venues that then serve the end consumer, e.g. cafés, offices, events) appears repeatedly among higher-rated orgs as a way to reduce direct-to-consumer acquisition costs while still achieving consumer-facing impact.",
+  "potential_gaps": "1) Deposit-return and packaging-as-a-service models are proportionally rare (8.1% and 6.9% of the dataset) despite showing the strongest association with high REUSE priority ratings — this is the clearest 'underinvested but high-potential' gap identified. 2) Geographic coverage in Africa, South Asia, and Latin America is thin relative to the US/UK/Northern-Europe concentration (top 5 countries = ~29% of the dataset alone); given that plastic-waste burden is often highest in rapidly urbanising regions, this looks like a discovery gap rather than a true absence of activity. 3) Repair (2.3%) and rental (2.3%) circular models are markedly underrepresented compared to refill and reusable packaging — this may partly reflect the original seed list's FMCG/packaging bias rather than a genuine market gap, and is worth testing with a dedicated repair/rental-focused search pass. 4) No blockchain-based tracking systems were found anywhere in the dataset, despite blockchain being discussed elsewhere in circular-economy contexts — either genuinely unused in this sector to date, or simply undetectable via public-facing sources. 5) Company size/scale is disclosed nowhere in the dataset (0%), and independently-verified impact metrics are thin (only 15.0% of profiles reached 'High' overall confidence) — this is a sector-wide transparency gap that limits comparative analysis of which organisations have actually achieved meaningful scale versus which simply have good marketing.",
+  "recommendations": "1) Prioritise discovery sweeps using the deposit-return / packaging-as-a-service / digital-tracking keyword sets above, since these are the strongest statistical predictors of a high-value case study in REUSE Foundation's own existing rating methodology. 2) Build a standing watch-list around the recurring gatekeeper retailers/brands (Coop, Carrefour, Amazon, Coca-Cola, Unilever, Nestlé, Walmart, Aldi, P&G) and monitor their sustainability press releases quarterly — new reuse partners are frequently announced there before the startup itself gets independent coverage. 3) Commission a dedicated research pass targeting Africa, South Asia, and Latin America using the geographic-gap search pattern above, to correct the current US/UK/Northern-Europe concentration. 4) When conducting outreach or interviews with organisations for future case studies, proactively request company size and audited impact-metric disclosure — this is the single most consistent gap across all 708 profiles and the main blocker to raising overall research confidence scores. 5) Re-run this Feature Analysis prompt periodically as the database grows (per the prompt's own usage instructions), and specifically re-check whether the deposit-return/PaaS 'small but mighty' pattern holds as more organisations are added — if it does, it may justify a standalone REUSE Foundation initiative or funding call focused specifically on those two models."
+}

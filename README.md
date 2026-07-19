@@ -9,7 +9,10 @@ This is **version 2** of the REUSE Foundation library, built to the V4 research 
 - `data/REUSE_Master_List.csv` — working master dataset (748 rows), updated as each organisation is researched to V4 depth.
 - `data/source/` — original source spreadsheets and the V4 output format example.
 - `organisations/` — one markdown profile per organisation (Section T output of the V4 prompt), filename = slugified org name.
-- `PROGRESS.md` — tracks research status per organisation.
+- `data/REUSE_V4_Master.csv` — the full structured V4 dataset (708 unique organisations), generated from `organisations/*.md` via `scripts/parse_md_to_csv.py`.
+- `docs/` — the public GitHub Pages site (browsable card/table index + one page per organisation), generated via `scripts/build_site.py`.
+- `analysis/` — REUSE Foundation's Feature Analysis: common patterns, search criteria, success factors, gaps, and recommendations computed across all 708 organisations. See `analysis/feature_analysis.json` (data) and `analysis/feature_analysis_report.html` (report, rendered via `scripts/render_feature_analysis_html.py`); underlying stats recomputed via `scripts/compute_feature_stats.py`.
+- `PROGRESS.md` — tracks research status per organisation (research is complete: 708/708).
 
 ## Methodology
 
