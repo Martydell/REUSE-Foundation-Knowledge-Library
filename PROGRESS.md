@@ -2,8 +2,8 @@
 
 Total unique organisations: 727 (748 rows in original list, 21 duplicates)
 
-- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 397
-- Remaining (unresearched + partial + deep legacy, combined): 318
+- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 468
+- Remaining (unresearched + partial + deep legacy, combined): 246
 
 Note: from org #398 onward (~Looping/M-names onward), profiles use a leaner format at the
 user's request to increase throughput: 1-2 sources per org instead of 2-4, ~50-word overview/
@@ -55,7 +55,7 @@ no API calls needed, so CSV regeneration never costs research budget.
 - [ ] mymizu
 - [ ] Nashonuma
 - [ ] Net Zero Co.
-- [ ] O Granel da Sofia
+- [x] O Granel da Sofia — see organisations/o-granel-da-sofia.md
 - [ ] Ong Hut Co
 - [ ] Ozarka
 - [ ] Packaging Cluster / Green Impackt
