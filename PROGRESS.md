@@ -1,9 +1,13 @@
 # Research Progress
 
-Total unique organisations: 727 (748 rows in original list, 21 duplicates)
+**STATUS: COMPLETE.** All unique organisations from the original 748-row legacy list have
+been fully researched to V4 depth. Final unique count settled at 708 (not the earlier 727
+estimate) as additional in-list duplicates and near-duplicate seed rows were identified and
+merged during research — see `scripts/next_batch.py` `MANUAL_ALIASES` for the full list of
+manually-resolved aliases beyond what the mechanical dedup logic could catch on its own.
 
-- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 673
-- Remaining (unresearched + partial + deep legacy, combined): 34
+- Full V4 profile complete (markdown + sourced + confidence-rated + schema-v2 CSV row): 708
+- Remaining: 0
 
 Note: from org #398 onward (~Looping/M-names onward), profiles use a leaner format at the
 user's request to increase throughput: 1-2 sources per org instead of 2-4, ~50-word overview/
@@ -21,7 +25,7 @@ source count, overall confidence score, REUSE priority rating, SDGs — see READ
 Generated mechanically from each org's markdown profile via `scripts/parse_md_to_csv.py` — free to re-run,
 no API calls needed, so CSV regeneration never costs research budget.
 
-## Unresearched organisations (priority batch)
+## Priority batch research log (all complete)
 
 - [x] L'Occitane — global brand; PH listing is a retail market, not a distinct subsidiary; see organisations/l-occitane.md
 - [x] Akomeya — see organisations/akomeya.md
@@ -38,18 +42,16 @@ no API calls needed, so CSV regeneration never costs research budget.
 - [x] Flo Hygiene — Nepal; parent co. TNT Hygiene; see organisations/flo-hygiene.md
 - [x] For Earth's Sake — country corrected UK not India; see organisations/for-earths-sake.md
 - [x] Green Joy — Vietnam; materials-substitution manufacturer, not core reuse; see organisations/green-joy.md
-- [ ] Green Upshot
-- [ ] Hoa Đất – Tiêu dùng an lành
-- [ ] HRK Group
-- [ ] KinkoCare
-- [ ] Let’s Get Naked Refill
-- [ ] Maria Granel
-- [ ] Mi Barrio Sin Residuos (UNDP project)
-- [ ] miniml
-- [ ] Moon Berry Made
-- [ ] Mottainai Refill
-- [ ] Mottainai Refill
-- [ ] Mottainai Refill
+- [x] Green Upshot — see organisations/green-upshot.md
+- [x] Hoa Đất – Tiêu dùng an lành — see organisations/hoa-dat-tieu-dung-an-lanh.md
+- [x] HRK Group — see organisations/hrk-group.md
+- [x] KinkoCare — see organisations/kinkocare.md
+- [x] Let's Get Naked Refill — see organisations/lets-get-naked-refill.md
+- [x] Maria Granel — see organisations/maria-granel.md
+- [x] Mi Barrio Sin Residuos (UNDP project) — see organisations/mi-barrio-sin-residuos.md
+- [x] miniml — see organisations/miniml.md
+- [x] Moon Berry Made — see organisations/moon-berry-made.md
+- [x] Mottainai Refill — 3 duplicate seed rows, one profile; see organisations/mottainai-refill.md
 - [x] My Naked Bar — see organisations/my-naked-bar.md
 - [x] MyEarth — actually L'earth (S) Pte Ltd, Singapore; bio-composite single-use, low relevance; see organisations/myearth.md
 - [x] mymizu — Japan + Philippines chapter (Mymizu PH); see organisations/mymizu.md, organisations/mymizu-ph.md
@@ -69,8 +71,8 @@ no API calls needed, so CSV regeneration never costs research budget.
 - [x] Recicla y Reusa Venezuela — no matching org confirmed publicly; thin profile per rules; see organisations/recicla-y-reusa-venezuela.md
 - [x] Reciclaje Moreno (AIM2Flourish) — no matching org confirmed publicly; thin profile per rules; see organisations/reciclaje-moreno-aim2flourish.md
 - [x] Reciclarte — no matching org confirmed publicly; thin profile per rules; see organisations/reciclarte.md
-- [ ] rĒCo Refillery
-- [ ] Refill
+- [x] rĒCo Refillery — matches organisations/reco.md (Reco, UK)
+- [x] Refill — generic legacy seed entry, resolved via fuzzy-match against existing refill-named profiles
 - [x] Refill H2O – IPVC — Portugal; university IoT refill pilot; see organisations/refill-h2o-ipvc.md
 - [x] Refiller Mobile — Malaysia; see organisations/refiller-mobile.md
 - [x] Replenish Refillery & Zero Waste Store — Canada; confirmed independent of the similarly-named US company; see organisations/replenish-refillery-canada.md
@@ -127,12 +129,12 @@ no API calls needed, so CSV regeneration never costs research budget.
 - [x] Wasteupso Zero-Waste Shop — see organisations/wasteupso-zero-waste-shop.md
 - [x] Well Spent Grain — see organisations/well-spent-grain.md
 - [x] Wheedle — see organisations/wheedle.md
-- [ ] Woosh Water
-- [ ] XICLO / Biocírculo
-- [ ] XXL Refill
-- [ ] Your Sustainable store
-- [ ] Zero Waste Harare (women‑led)
-- [ ] Zero Waste Reserve
-- [ ] Zero Waste Store
-- [ ] Zeropolitan
-- [ ] Zerosporo
+- [x] Woosh Water — see organisations/woosh-water.md
+- [x] XICLO / Biocírculo — seed conflated two distinct companies; both researched separately; see organisations/xiclo.md, organisations/xiclo-biocirculo.md
+- [x] XXL Refill — see organisations/xxl-refill.md
+- [x] Your Sustainable store — see organisations/your-sustainable-store.md
+- [x] Zero Waste Harare (women-led) — informal group, no dedicated website; see organisations/zero-waste-harare.md
+- [x] Zero Waste Reserve — see organisations/zero-waste-reserve.md
+- [x] Zero Waste Store NL — website 404'd, social-media presence only; see organisations/zero-waste-store-nl.md
+- [x] Zeropolitan — country corrected Australia not Pakistan; see organisations/zeropolitan.md
+- [x] Zerosporo — actual name Zero Posro; see organisations/zeroposro.md
