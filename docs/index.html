@@ -10,26 +10,56 @@
 </head>
 <body>
 <header class="site-header">
-  <span class="brand">♻️ REUSE Foundation Knowledge Library</span>
+  <div class="brand-block">
+    <span class="brand">♻️ REUSE Foundation Knowledge Library</span>
+    <p class="tagline">708 circular-economy &amp; reuse organisations, researched and sourced worldwide.</p>
+  </div>
 </header>
 <main class="index">
-  <h1>708 circular-economy &amp; reuse organisations</h1>
   <p class="subtitle">A research-grade, publicly-citable database of reuse, refill, deposit-return, and packaging-as-a-service organisations worldwide. Full methodology in the <a href="https://github.com/Martydell/REUSE-Foundation-Knowledge-Library">GitHub repo</a>.</p>
 
-  <div class="controls">
-    <input type="search" id="search" placeholder="Search by name, country, category…" autocomplete="off">
-    <select id="country-filter"><option value="">All countries</option></select>
-    <select id="priority-filter"><option value="">All priority ratings</option></select>
-    <span id="result-count" class="result-count"></span>
+  <div id="summary" class="summary"></div>
+
+  <div class="panel">
+    <div class="controls">
+      <div class="control">
+        <label for="search">Search</label>
+        <input type="search" id="search" placeholder="Name, country, category, summary…" autocomplete="off">
+      </div>
+      <div class="control">
+        <label for="country-filter">Country</label>
+        <select id="country-filter"><option value="">All countries</option></select>
+      </div>
+      <div class="control">
+        <label for="priority-filter">Priority rating</label>
+        <select id="priority-filter"><option value="">All ratings</option></select>
+      </div>
+      <div class="control">
+        <label for="status-filter">Status</label>
+        <select id="status-filter"><option value="">All statuses</option></select>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="view-tabs">
+        <button id="cardBtn" class="active" onclick="setView('cards')">Card view</button>
+        <button id="tableBtn" onclick="setView('table')">Table view</button>
+      </div>
+      <button class="secondary" onclick="resetFilters()">Reset filters</button>
+      <span id="result-count" class="result-count"></span>
+    </div>
   </div>
 
-  <div class="table-wrap">
+  <div id="cards" class="cards"></div>
+
+  <div id="tableWrap" class="table-wrap hidden">
     <table id="org-table">
       <thead>
         <tr>
           <th data-key="name" class="sortable">Organisation</th>
           <th data-key="country" class="sortable">Country</th>
           <th data-key="categories">Categories</th>
+          <th data-key="year" class="sortable">Founded</th>
+          <th data-key="status" class="sortable">Status</th>
           <th data-key="priority" class="sortable">Priority</th>
         </tr>
       </thead>
